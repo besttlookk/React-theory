@@ -1,3 +1,5 @@
+// --used for performace optimization
+
 import React from 'react'
 import ParentComponent from './components/paraentComponent'
 
@@ -23,4 +25,4 @@ export default App
 
 // useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed
 
-//It is useful when passing  callbacks to optimized child components that rely on reference equality to prevent unneccessary renders
+//It is useful when 'passing  callbacks' to optimized 'child components' that rely on reference equality to prevent unneccessary renders

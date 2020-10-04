@@ -85,10 +85,7 @@ reducer function itself takes two parameter and return the additon of those valu
 //     firstCounter: 0
 // }
 
-// // reducer function accepts the current state and returns the new state.
-// // but to this transition to happen we need something..and that something is 'action' parameter
-// //action can be think as the instruction to the reducer function
-// // based on what action specifies the reducer function perform the nececcary state transition. 
+
 // const reducer = (state, action) => {
 
 //     switch(action.type) {
@@ -105,9 +102,7 @@ reducer function itself takes two parameter and return the additon of those valu
 // }
 
 // function Counter() {
-//     // for third and final step we need to get hold of a value to be displayed in the jsx and we also need a way to call the reducer function with the appropriate action
-//     //that happens to be very simple bcoz that exactly what useReducer returns
-//     // this dispatch method allows us to ecexute the code corresponding to a particular action
+//   
 //     const [count, dispatch] = useReducer(reducer, initialState)
 //     return (
 //         <div>

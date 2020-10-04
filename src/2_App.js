@@ -5,8 +5,8 @@ import Student from './Student';
 // let el = <h1>Hello Worldd</h1>
 
 
-// Class Based Component
-// koi v 'class component' banana hai to ye jaruri hai ki wo component class ko extend kare
+//=================================== Class Based Component
+// koi v 'class component' banana hai to ye jaruri hai ki wo 'component class' ko extend kare
 // class App extends Component {
     // ---------------------------
     //The render() method is the only 'required' method in a class component. It examines 'this.props' and ' this.state' .
@@ -46,10 +46,10 @@ import Student from './Student';
         // ) 
         // ------------not supported in every browser
         // return (
-        //     <Fragment>
+        //     <>
         //         <h1>Hello</h1>
         //         <h2>World</h2>
-        //     </Fragment>  // no extra div present here
+        //     </>  // no extra div present here
         // ) 
             
     
@@ -100,8 +100,8 @@ export default App;
 
 
 // ==========================Components======================================================
-//Componenst are thee building blocks of any React app.
-//Components let you spliy the UI into independent, reusable pieces, and think about each piece in isolation
+//Componenst are the building blocks of any React app.
+//Components let you splice the UI into independent, reusable pieces, and think about each piece in isolation
 //Componenst are like  'javascript' functions.  They accept arbitary inputs(called 'props') and returns React elements describing what should apper on the screen
 //React treats components starting with lowercase letters as DOM tags. for exapmle, <div> represnets an HTML div tag, but <App/> represnets a component requires App to be in scope
 

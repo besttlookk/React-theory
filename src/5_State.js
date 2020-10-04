@@ -1,4 +1,4 @@
-/*
+     /*
 //=================props vs states================================
 1. props get passed to the component. 
     state is managed within the component. 
@@ -131,7 +131,7 @@ When you call super with props. react will make props available across the compo
 ex: this.sate = {
     name: "rahul"
 }
-this.setState({name: "Amit"})  // accept object
+this.setState({name: "Amit"})  // accept object(it also accept function when the state value depends on previous state value)
 
 
 2. this.setState(function(prevstate, props){   
@@ -347,10 +347,3 @@ export default class Student extends Component {
     }
 }
 
-// ===========================SUMMARY
-// 1. Always make use of setState and never modify the state directly. 
-
-// 2. Code has to be executed after the state has been updated? place that code in the callback function which is the second argument to the setState method.
-
-//3. when we have to update state based on the previous state value, pass in a funtion as an argument instead of regular objec
-t

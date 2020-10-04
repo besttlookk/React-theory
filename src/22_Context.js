@@ -7,7 +7,7 @@ In a typical react application, data is passed top-down(parent to child) via pro
 STEPS:
     1. Passing the initial state to React.createContext. This Function then returns an object with a Provider and a Consumer.
 
-    2. Using the Provider component at the top of the tree and making it accept a prop called value. This value can be anything! 
+    2. Using the Provider component at the top of the tree and making it accept a prop called 'value'. This value can be anything! 
 
     3. Using the consumer component anywhere below the Provider in the component tree to get a subset of the state. 
 

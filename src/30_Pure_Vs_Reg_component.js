@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
-import PureComp from './31_pureComponent'
-import RegComp from './32_regularComponent'
+// import PureComp from './31_pureComponent'
+// import RegComp from './32_regularComponent'
 import MemoComp from './33_MemoComponent'
 
 export default class App extends Component {
@@ -14,14 +14,14 @@ export default class App extends Component {
              name: "Prabhash"
         }
     }
-    
-    // componentDidMount(){
-    //     setInterval(()=>{
-    //         this.setState({
-    //             name: "Prabhash"
-    //         })
-    //     },2000)
-    // }
+    // ===regularly changing the state with the same name
+    componentDidMount(){
+        setInterval(()=>{
+            this.setState({
+                name: "Prabhash"
+            })
+        },2000)
+    }
     render() {
         console.log('**************Parent Component****************************')
         return (
@@ -50,5 +50,5 @@ A regular component does not implement "shouldComponentUpdate" method. It always
 //A pure component implements shouldComponentUpdate with a shallow prop and state comparision. 
 // re-render only if there is differnce after shallow comparison
 
-
+NOTE: when dealing with pure component dont mutate array or object if we have to change it...always return new array or object.. because pushing in array wont chnage the reference and hence component will not re render
 */

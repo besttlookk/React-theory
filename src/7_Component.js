@@ -28,34 +28,7 @@ Following in-build-methods are called in the 'following order' when an instance 
 
 The render() method is required and will always be called, the others are optional and will be called if you define them.
 
-// ------Constructor()-
-The Contructor for a 'react component' is called 'before' it is mounted. 
-When implementing the constructor for a React.Component sublass, we should call "super(props)"" before any other statement.
-Otherwise, "this.props" will be undefined in the constructor, which can lead to bugs.
 
-The constructor() method is called before anything else, when the component is initiated, and it is the natural place to set up the initial state and other initial values.
-
-The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
-
-The constructor function is where you initiate the component's properties.
-
-In React, component properties should be kept in an object called state.
-
-Another way of handling component properties is by using props.
-
-Props are like function arguments, and you send them into the component as attributes.
-
-The constructor method is called, by React, every time you make a component:
-
-React constructor are 'only' used for two purposes:
-    a. Initializing local state by assigning an object to "this.state". // now a days state is initialized without constructor. 
-            Ex: this.state = {name: "Rahul"}
-
-    b. Binding event handler methods to an instance. 
-            this.handleClick = yhis.handleClick.bind(this);
-
-
-If we dont initialize state or we dont bind methods, you dont need to implement a constructor for our react Component. 
 
 
 
@@ -128,7 +101,7 @@ compoundDidMount(){
 //         )
 //     }
 
-}
+// }
 
 /*
 // ======================================2. Updating=======================================

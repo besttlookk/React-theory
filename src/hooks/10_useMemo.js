@@ -14,6 +14,9 @@ function Counter() {
 		setCounterTwo(counterTwo + 1)
   }
 
+  // jaan ker is function ko slow kiya gaya hai....taaki uska effect second
+  // we are telling react not to compute this when we are changing counter two values
+//   useMemo working is similar to how useCallbacks works
   const isEven = useMemo(() => {
     let i = 0
     while (i < 2000000000) i++

@@ -1,6 +1,6 @@
 /*
 =============================LISTS===============================
-We can build collections of elements and include them in JSX usingcurly braces {}
+We can build collections of elements and include them in JSX using curly braces {}
 
 const arr = [10, 20, 30, 40]
 

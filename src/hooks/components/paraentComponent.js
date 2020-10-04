@@ -7,6 +7,7 @@ function ParentComponent() {
 	const [age, setAge] = useState(25)
 	const [salary, setSalary] = useState(50000)
 
+	// calling useCallback function[takes two argument]{first argument: callback function}{second: array of dependencies}
 	const incrementAge = useCallback(() => {
 		setAge(age + 1)
 	}, [age])
@@ -27,3 +28,5 @@ function ParentComponent() {
 }
 
 export default ParentComponent
+
+// har re-render ke baad same function ka refrence change ho jata memory me...jiske karan ager wo funtion kisi child component ke props me hai to wo v re-render ho jata..chahe koi change hua ho ki nhi

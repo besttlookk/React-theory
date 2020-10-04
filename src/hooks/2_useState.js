@@ -4,32 +4,32 @@
 // 3. method to set the state value
 
 // ============Class based counter=======================
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
-export default class Counter extends Component {
-    constructor(){
-        super()
+// export default class Counter extends Component {
+//     constructor(){
+//         super()
 
-        this.state = {
-            count: 0
-        }
-    }
+//         this.state = {
+//             count: 0
+//         }
+//     }
 
-    incrementCounter = () => {
-        this.setState({
-            count: this.state.count + 1
-        })
-    }
+//     incrementCounter = () => {
+//         this.setState({
+//             count: this.state.count + 1
+//         })
+//     }
 
-    render(){
-        const {count} = this.state
-        return (
-            <div>
-                <button onClick={this.incrementCounter}>{count} Times</button>
-            </div>
-        )
-    }
-}
+//     render(){
+//         const {count} = this.state
+//         return (
+//             <div>
+//                 <button onClick={this.incrementCounter}>{count} Times</button>
+//             </div>
+//         )
+//     }
+// }
 
 
 // =========================same counter with the help of hooks =====

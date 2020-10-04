@@ -38,7 +38,6 @@ FORM EVENTS: onChange  / onInput  / onInvalid  /  onSubmit
 
 
 */
-
 // ------------------------Event with Class component[bit though than function]Method 1[bind method in constructore ]-------------------------------
 // beacuse binding occurs once in the constructor, it is better approch than binding in render method
 // import React, { Component } from 'react'
@@ -93,7 +92,7 @@ FORM EVENTS: onChange  / onInput  / onInvalid  /  onSubmit
 //     // ------------normal function
 //     handleClick(){
 
-//         console.log('button Clicked', this)   // this not accessbale so we will make it arrow function or use bind method inside constructor
+//         console.log('button Clicked', this)   
 //         this.setState({
 //             roll: this.state.roll + 1
 //         })
@@ -151,37 +150,37 @@ FORM EVENTS: onChange  / onInput  / onInvalid  /  onSubmit
 // export default Student
 
 // ======Method 4: Using arrow function to define event handler
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-class Student extends Component{
+// class Student extends Component{
 
-    constructor(props){
-        super(props);
-        this.state = {
-            name : "Rahul",
-            roll: this.props.roll
-        };
-    }
+//     constructor(props){
+//         super(props);
+//         this.state = {
+//             name : "Rahul",
+//             roll: this.props.roll
+//         };
+//     }
 
 
-    // -------------Arrow function
-    handleClick = () => {
+//     // -------------Arrow function
+//     handleClick = () => {
 
-        console.log('button Clicked', this)   // this not accessbale so we will make it arrow function
+//         console.log('button Clicked', this)   // this not accessbale so we will make it arrow function
 
-    }
-    render(){
-        return(
-            <div>
-                <h1>Event Class</h1>
-                <h3> Hello, {this.state.name} your Roll: {this.state.roll}</h3>
-                <button onClick={this.handleClick}>Click ME</button>
-            </div>
-        )
-    }
-}
+//     }
+//     render(){
+//         return(
+//             <div>
+//                 <h1>Event Class</h1>
+//                 <h3> Hello, {this.state.name} your Roll: {this.state.roll}</h3>
+//                 <button onClick={this.handleClick}>Click ME</button>
+//             </div>
+//         )
+//     }
+// }
 
-export default Student
+// export default Student
 
 
 // ===============================Event handling with function component======================
@@ -217,7 +216,7 @@ export default Student
 
 
 NOTE: 
-In both cases, the 'e' agrument represting the React event will be passsed as secomd argument after the ID
+In both cases, the 'e' agrument represting the React event will be passsed as secomd argument after the ID(important)
 
 With an arrow function we have to pass it explicitilt, but with bind any futher arguments are automatically forwarded
 
@@ -299,7 +298,7 @@ With an arrow function we have to pass it explicitilt, but with bind any futher 
 
 // class Student extends Component{
 
-//     // state without Constructor or state property
+//    
 //    state = {
 //        name: 'Rahul',
 //        id: 500

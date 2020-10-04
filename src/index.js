@@ -19,8 +19,8 @@ import ReactDOM from 'react-dom';
 // import Student from './Props.js';
 
 // import App from "./7_Component";  // mounting
-// import Student from "./Component";  // updating
-// import Student from "./Component";  // unmount
+// import Student from "./7_Component";  // updating
+// import Student from "./7_Component";  // unmount
 // import Marks from "./Marks";  // unmount
 
 // import App from './Hooks'
@@ -36,12 +36,13 @@ import ReactDOM from 'react-dom';
 // import App from './19_CssModule'
 
 // import App from './21_Forms'
+// import Ref from './21a_ref'
 
 // import App from './22_Context'
 
 // import App from './26_HOC'
 
-// import App from './30_Pure_Vs_Reg_component'
+import App from './30_Pure_Vs_Reg_component'
 
 
 // import PostList from './34_http'
@@ -126,13 +127,14 @@ import ReactDOM from 'react-dom';
 
 
 // ReactDOM.render(<App />, document.getElementById('root'));  //form .js 
+// ReactDOM.render(<Ref />, document.getElementById('root'));  //ref .js 
 
 
 // ReactDOM.render(<App />, document.getElementById('root'));  //context .js 
 
 // ReactDOM.render(<App />, document.getElementById('root'));  //HOC.js 
 
-// ReactDOM.render(<App />, document.getElementById('root'));  //reg vs pure component.js 
+ReactDOM.render(<App />, document.getElementById('root'));  //reg vs pure component.js 
 
 
 // ReactDOM.render(<PostList />, document.getElementById('root'));  //34_http  get
@@ -141,7 +143,7 @@ import ReactDOM from 'react-dom';
 
 // ========================Hook render============================
 
-ReactDOM.render(<Counter />, document.getElementById('root'))   // 2_useState for class
+// ReactDOM.render(<Counter />, document.getElementById('root'))   // 2_useState for class
 // ReactDOM.render(<HookCounter />, document.getElementById('root'))   // 2_useState for hook
 
 // ReactDOM.render(<ClassCounter />, document.getElementById('root'))   // 3_useEffect for class

@@ -6,7 +6,7 @@ CSS in Js
 
 
 // -------------------Inline stylesheet
-styel is most often used in React application to add dynamically-computed styles at render time.
+style is most often used in React application to add dynamically-computed styles at render time.
 
 The style attribute accepts a JS object with camelCased properties rather than a CSS string. 
 This is consistent with the DOM style JS property, is more effiecient, and prevents XSS security holes. 

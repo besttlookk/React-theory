@@ -25,13 +25,13 @@ We need to write an event handler for every way our data can change and pipe all
 
 
 //------------Uncontrolled Component-------------------------------
-In a controlled component, form data is handled by a React component. The alternative is controlled component, where form data is handled by the DOM itself
+In a controlled component, form data is handled by a React component. The alternative is uncontrolled component, where form data is handled by the DOM itself
 
 To write an uncontrolled component, instead of writing an event handler for every state update, we can use "ref" to get form values from the DOM. 
 
 
 //--when use uncontolled component:
-We do not need to write an event hanler for every way our data change and pipe all of the input state through a React component. 
+when We do not need to write an event hanler for every way our data change and pipe all of the input state through a React component. 
 
 Converting a pre-existing code base to React, or integrating a React application with a non-React library
 */
@@ -209,6 +209,8 @@ Converting a pre-existing code base to React, or integrating a React application
 // =========================Refs[3 STEPS: 1.Create ref(inside constructor) 2.Attach this ref yto the element in the render method]
 //Refs provide a way to access DOM nodes or React elements creates in the render method
 
+// it allows to access one element from another element
+
 //--When to use Refs:
 // managing Focus, text-selection, or media playback
 // trigeering inperative animations
@@ -228,7 +230,7 @@ render(){
 }
 
 //------Accessing Refs
-When a ref is passed to an element in render, a reference to the node becomes accessible at the current attribute of the ref
+When a ref is passed to an element in render, a reference to the node becomes accessible at the 'current' attribute of the ref
 
 const node = this.myRef.current
 
@@ -253,8 +255,8 @@ The value of the ref differs depending on the type of the node:
 //         this.textInput = React.createRef();
 //     }
 //     componentDidMount =()=>{
-//         // console.log(this.textInput)
-//         // console.log((this.textInput.current))
+//         console.log(this.textInput)
+//         console.log((this.textInput.current))  // it gives the target element ~ ref_name[textInput] = e | current = target  // only differce is we have fixed our e(ref) here...it doesnot matter where we click..this.ref will indicate same element
 //         this.textInput.current.focus()   // focus automatically on password
 //     }
 
@@ -304,7 +306,8 @@ The value of the ref differs depending on the type of the node:
 //             <React.Fragment>
 //                 <h2>You typed: {this.state.value}</h2>
 //                 <form onSubmit={this.handleSubmit}>
-//                     Input: <input type='text' ref ={this.textInput} />
+//                     {/* input is p=our focus element now */}
+//                     Input: <input type='text' ref ={this.textInput} />  
 //                     <input type='submit' value='Submit' />
 //                 </form>
 //             </React.Fragment>
@@ -330,7 +333,7 @@ The function receives the React component instance or HTML DOM element as its ar
 //         super();
 //         this.backRef = null;
 //         this.setBackRef = element => {
-//             this.backRef = element;
+//             this.backRef = element; // element is stored in this.backref
 //         }
 //     }
 
